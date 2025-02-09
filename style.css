@@ -1,0 +1,222 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Spartan", serif;
+    margin: 5rem 2rem 0 6rem;
+}
+
+.pattern-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    max-width: 30vw;
+    color: var(--Very-Dark-Magenta);
+    float: left;
+}
+
+.text {
+    clear: both;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    max-width: 35vw;
+    margin-bottom: 2rem;
+    float: left;
+    opacity: 0.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40rem;
+}
+
+.rate {
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom:  2vh;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.no-1 {
+    width: 75%;
+}
+
+.no-2 {
+    margin-left: 3em;
+    width: 75%;
+}
+
+.no-3 {
+    margin-left: 6em;
+    width: 75%;
+}
+
+.star-1 {
+    margin-left: 15px;
+}
+
+.star {
+    margin-right: 40px;
+}
+
+.box-container {
+    margin-top: 8rem;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: 100%;
+}
+
+.box {
+    background-color: var(--Very-Dark-Magenta);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    height: 50%;
+}
+
+.prof {
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    float: left;
+}
+
+.name {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0.3rem 0 0.4rem 4.5rem;
+}
+
+.role {
+    color: var(--Soft-Pink);
+    margin: 0.5rem 0 0.4rem 4.5rem;
+    font-size: 1.5rem;
+}
+
+.review {
+    clear: both;
+    margin-top: 2rem;
+    color: var(--White);
+    line-height: 1.5;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.box-2 {
+    margin-top: 1rem;
+}
+
+.box-3 {
+    margin-top: 2rem;
+}
+ @media (max-width:380px) {
+    body {
+        margin: 0;
+        padding: 2rem;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+   h1 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+    max-width: 100% !important;
+    width: 100% !important;
+   }
+
+   .text {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0rem;
+    text-align: center;
+    font-size: 1rem;
+   }
+
+   .container {
+    clear: both;
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 2rem;
+   }
+
+   .rate {
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .star-1 {
+    margin-left: 60px;
+  }
+
+   .star {
+    margin-right: 60px;
+   }
+
+   .box-container {
+    margin: 0;
+    margin-bottom: 2rem;
+    flex-direction: column;
+   }
+
+   .box {
+    padding: 1rem;
+    margin: 0;
+    height: 40vh;
+    margin-bottom: 1rem;
+    width: 100% !important;
+   }
+
+   .name, .role, .review {
+    font-size: 1rem;
+   }
+    
+   .prof {
+    width: 13vw;
+   }
+
+   img, svg {
+    max-width: 100%;
+    height: auto;
+   }
+
+   .pattern-bottom {
+    display: none;
+   }
+
+ }
